@@ -91,7 +91,7 @@ public extension LinkLabelDelegate {
     
     func linkAttributeForLinkLabel(linkLabel: LinkLabel, checkingType: NSTextCheckingType) -> [String: AnyObject] {
         return [
-            NSForegroundColorAttributeName: linkLabel.tintColor,
+            NSForegroundColorAttributeName: UIColor(red: 162.0 / 255.0, green: 80.0 / 255.0, blue: 175.0 / 255.0, alpha: 1.0),
 //            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue
         ]
     }

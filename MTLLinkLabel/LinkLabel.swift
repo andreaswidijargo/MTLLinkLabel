@@ -92,14 +92,14 @@ public extension LinkLabelDelegate {
     func linkAttributeForLinkLabel(linkLabel: LinkLabel, checkingType: NSTextCheckingType) -> [String: AnyObject] {
         return [
             NSForegroundColorAttributeName: linkLabel.tintColor,
-            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue
+//            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue
         ]
     }
     
     func linkDefaultAttributeForCustomeLink(linkLabel: LinkLabel) -> [String: AnyObject] {
         return [
             NSForegroundColorAttributeName: linkLabel.tintColor,
-            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue
+//            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue
         ]
     }
     

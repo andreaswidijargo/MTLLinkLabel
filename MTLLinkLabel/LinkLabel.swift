@@ -80,7 +80,7 @@ public extension LinkLabelDelegate {
             let httpText = !text.hasPrefix("http://") && !text.hasPrefix("https://") ? "http://" + text : text
             
             guard let url = NSURL(string: httpText) else { return }
-            UIApplication.sharedApplication().openURL(url)
+            NSNotificationCenter.defaultCenter().postNotificationName("co.happy5.one.linklabel.linkTapped", object: url)
             
         }
         else if result.resultType.contains(.PhoneNumber) {
